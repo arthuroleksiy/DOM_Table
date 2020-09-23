@@ -4,12 +4,12 @@
 	</head>
 	<body>
 		<form id ="inputForm">
-			<div>
+			<form>
 				<label id = "rowLabel">Row</label>
-				<input type = "number" id = "row" required pattern = "^[0-9]+">
+				<input type = "number" id = "row" min="1" max="100" required>
 				<label id = "columnLabel">Column</label>
-				<input type = "number" id = "column" required pattern = "^[0-9]+">
-			</div>
+				<input type = "number" id = "column" min="1" max="100" required>
+			</form>
 			<input type = "button" id ="but" value="Run">
 	    </form>
 		<table id="myTable">
